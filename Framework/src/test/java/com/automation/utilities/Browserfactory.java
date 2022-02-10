@@ -17,8 +17,6 @@ public class Browserfactory {
 		if(browsername.contains("Chrome")) 
 		
 		{
-			
-			
 			ChromeOptions options = new ChromeOptions();
 
 			options.addExtensions(new File("C://Users//asif.ali//Desktop//Drivers//chromedriver_win32//chromedriver.exe"));

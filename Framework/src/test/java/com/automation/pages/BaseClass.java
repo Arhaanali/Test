@@ -51,7 +51,6 @@ public class BaseClass {
 		Reporter.log("Before Class  for APP" ,true);
 		driver=Browserfactory.StartApp(driver , conf.getUrl(), conf.getBrowser());
 		
-		
 	}
 	
 @AfterClass
@@ -68,11 +67,15 @@ public void Teardownmethod(ITestResult results) throws IOException {
 		
 		//Helper.takesceenshortsas(driver);
 		
+		
+		
+		
 		Logger.fail("My fail test cases sceenshots", MediaEntityBuilder.createScreenCaptureFromPath(Helper.takesceenshortsas(driver)).build());
 		
 	}
 	else if(results.getStatus()==results.SUCCESS)
 	{
+		
 		Logger.pass("My fail test cases sceenshots", MediaEntityBuilder.createScreenCaptureFromPath(Helper.takesceenshortsas(driver)).build());
 	}
 	Reports.flush(); 	
