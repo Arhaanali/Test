@@ -33,7 +33,7 @@ public class BaseClass {
 	
 	public void setforapp()
 	{
-		
+		//ASif commit for Git 
 		Reporter.log("Before Suit Setup for APP" ,true);
 		ExcelDataProvider Excel  =new ExcelDataProvider();
 		conf=new ConfigdataProvider();
