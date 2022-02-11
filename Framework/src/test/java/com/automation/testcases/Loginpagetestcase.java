@@ -9,10 +9,10 @@ import com.automation.pages.BaseClass;
 import com.automation.pages.Loginpagefactory;
 
 public class Loginpagetestcase extends BaseClass
+
 {
 
-	
-	
+
 	@Test
 	
 	public void login()
@@ -28,10 +28,12 @@ public class Loginpagetestcase extends BaseClass
 		
 	
 			
-			login.logincred(Excel.getStringdata("Login", 0, 0), Excel.getStringdata("Login", 0, 1));
+			//login.logincred(Excel.getStringdata("Login", 0, 0), Excel.getStringdata("Login", 0, 1));
+		
+		//username Asif@test.com pass : Asif@1234
 		
 	
-		Logger.pass("Pass");
+		//Logger.pass("Pass");
 		}
 
 
